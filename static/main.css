@@ -1,11 +1,12 @@
 body {
   background: #E0EAF3;
   margin-top: 5rem;
+  overflow: hidden;
 }
 
 .button-authenticate {
   padding: 50px;
-  background-color: #F86642;
+  background-color: #607c8c;
   color: #FFF;
   font-family: Sans-serif;
   font-size: 50px;
@@ -19,9 +20,25 @@ body {
 
   /* Center horizontally -> Could make it manual if I add another button later*/
   display: flex;
-  margin-top: 400px; /* Adjust the value to move the button vertically */
+  margin-top: 90px; /* Adjust the value to move the button vertically */
   justify-content: center;
   
+  }
+
+  .image-container {
+    width: 500px; /* Set the width of the container */
+    height: 500px; /* Set the height of the container */
+    position: relative; /* Set position to relative for proper child positioning */
+}
+
+.image-container img {
+    transform: rotate(90deg); /* Rotate the image 90 degrees clockwise */
+    transform-origin: bottom left; /* Set the rotation origin to bottom left */
+    width: 100%; /* Make the rotated image fill the container width */
+    height: auto; /* Maintain the aspect ratio */
+    position: absolute; /* Set position to absolute for proper positioning within the container */
+    margin-top: -305px;
+    margin-left: 1170px;
   }
 
 h1, h2, h3, h4, h5, h6 {
@@ -49,5 +66,5 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 20px;
   border: 1px solid #dddddd;
   border-radius: 3px;
-  margin-bottom: 20px;
+  margin-top: 30px;     /* Change the height of the socials bar */
 }

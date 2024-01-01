@@ -13,9 +13,6 @@
     <title>TuneBuild</title>
 </head>
 <body>
-    <div class="col-md-8">
-      {% block content %}{% endblock %}
-    </div>
     <header class="site-header">
       <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
         <div class="container">
@@ -39,6 +36,9 @@
     </header>
     <main role="main" class="container">
       <div class="row">
+        <div class="col-md-8">
+          {% block content %}{% endblock %}
+        </div>
         <div class="col-md-4">
           <div class="content-section">
             <h3>Socials</h3>
@@ -59,8 +59,9 @@
         </div>
       </div>
     </main>
-
-
+    <div class="image-container">
+      <img src="{{ url_for('static', filename='flower.png') }}" alt="im1">
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
